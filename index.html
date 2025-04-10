@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aarthi Valavan - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/056/657/398/small_2x/a-vibrant-green-foliage-background-with-sunlight-filtering-through-creating-a-serene-and-refreshing-atmosphere-photo.JPG'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #66bb6a;
+      object-fit: cover;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #2e7d32;
+      margin: 10px 0;
+    }
+
+    h2 {
+      color: #43a047;
+      border-bottom: 2px solid #43a047;
+      padding-bottom: 5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    nav button {
+      background: #66bb6a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #66bb6a;
+    }
+
+    .section {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .active {
+      display: block;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      background: #fff;
+      color: #333;
+    }
+
+    form button {
+      background: #66bb6a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #confirmation {
+      color: #2e7d32;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #2e7d32;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      color: #1b5e20;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="mypic.jpg" alt="Aarthi Valavan" class="profile-img" />
+      <div>
+        <h1>Aarthi Valavan</h1>
+        <p>Email: <a href="mailto:Aarthiv1693@gmail.com">Aarthiv1693@gmail.com</a></p>
+        <p>Phone: 8904738926</p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/aarthiv1693" target="_blank">linkedin.com/in/aarthiv1693</a></p>
+        <p>Location: Bengaluru, India</p>
+      </div>
+    </div>
+
+    <nav>
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('education')">Education</button>
+      <button onclick="showSection('strengths')">Strengths & Hobbies</button>
+      <button onclick="showSection('contact')">Contact Me</button>
+    </nav>
+
+    <div id="about" class="section active">
+      <h2>About Me</h2>
+      <p>I am a passionate computer science student with a deep interest in building smart, innovative solutions. With a strong academic background and practical experience in software development, I aim to contribute meaningfully to any tech-driven organization I become part of.</p>
+    </div>
+
+    <div id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Python, Java, C, SQL</li>
+        <li>Web: HTML, CSS, JavaScript, .NET</li>
+        <li>Tools: Excel, Python libraries for data analysis</li>
+        <li>Knowledge: Data Structures, Algorithms, Computer Networks</li>
+        <li>Project Management & Testing</li>
+      </ul>
+    </div>
+
+    <div id="projects" class="section">
+      <h2>Projects & Achievements</h2>
+      <ul>
+        <li>Presented "Smart Mirror" concept at Technozare college fest</li>
+        <li>Presented paper on Robotic Process Automation (RPA)</li>
+        <li>MedSpeed: Accident detection and alert system (UDAAN)</li>
+        <li>Filed patent: Foldable watch with dual camera for portraits and UPI</li>
+        <li>Educational seminars at government schools</li>
+        <li>Online Auction Platform: Web app for bidding and selling goods (React, Node.js, MongoDB, Stripe)</li>
+        <li>Phishing Detection with Data Mining: Research on using advanced data mining techniques to detect phishing sites</li>
+      </ul>
+    </div>
+
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>MCA - Reva University (Pursuing)</li>
+        <li>BCA - New Horizon College, CGPA: 9.57 (2024)</li>
+        <li>PUC - Tapasya Pre University College, 92.83%</li>
+        <li>School - Amara Jyothi English Medium, 84%</li>
+      </ul>
+    </div>
+
+    <div id="strengths" class="section">
+      <h2>Strengths & Hobbies</h2>
+      <p><strong>Strengths:</strong> Communication, Leadership, Adaptability, Time Management</p>
+      <p><strong>Hobbies:</strong> Listening to music, Cycling, Badminton</p>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="confirmation" style="display: none;">Thank you! Your message has been sent.</p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Aarthi Valavan. All rights reserved.</p>
+      <p>
+        <a href="http://www.linkedin.com/in/aarthiv1693" target="_blank">LinkedIn</a> |
+        <a href="mailto:Aarthiv1693@gmail.com">Email</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('confirmation').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
